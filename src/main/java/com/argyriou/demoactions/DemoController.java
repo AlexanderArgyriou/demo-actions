@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
     @GetMapping
     public ResponseEntity<String> demo() {
-        return ResponseEntity.ok("demo");
+        return ResponseEntity.ok("Lorem ipsum dolor sit amet, consectetur adipiscing elit");
     }
 }
