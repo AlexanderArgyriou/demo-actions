@@ -8,6 +8,7 @@ public class DemoActionsApplication {
 
     // wow
     public static void main(String[] args) {
+        // my own wow commit
         SpringApplication.run(DemoActionsApplication.class, args);
     }
 
