@@ -38,6 +38,10 @@ jobs:
           PRERELEASE_SUFFIX: SNAPSHOT
           INITIAL_VERSION: 1.0.0
 
+      - name: Tag as environmental variable
+        run: |
+          run: TAG=$(git describe --tags --abbrev=0); echo "PROJECT_TAG=$TAG" >> $GITHUB_ENV
+
       - name: Log in to Docker Hub
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         with:
@@ -48,7 +52,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: aargyriou777/demo
+          images: aargyriou777/demo/$PROJECT_TAG
 
       - name: Build and push Docker image
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
