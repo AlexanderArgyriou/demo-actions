@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoActionsApplication {
 
     public static void main(String[] args) {
+        // my own wow commit
         SpringApplication.run(DemoActionsApplication.class, args);
     }
 
