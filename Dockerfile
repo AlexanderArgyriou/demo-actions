@@ -6,4 +6,4 @@ ADD ${JAR_FILE} app/app.jar
 
 EXPOSE 8181
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app/app.jar"]
