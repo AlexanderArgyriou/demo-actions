@@ -10,6 +10,7 @@ public class DemoActionsApplication {
     public static void main(String[] args) {
         // my own wow commit
         SpringApplication.run(DemoActionsApplication.class, args);
+        // a new feature
     }
 
 }
